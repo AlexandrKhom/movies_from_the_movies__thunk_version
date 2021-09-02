@@ -1,44 +1,20 @@
-import { useEffect } from "react";
-import { Route, Switch, useLocation } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import queryString from "query-string";
+import {useEffect} from "react";
+import {Route, Switch, useLocation} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
 
 import styles from "./MoviesPage.module.css";
-import { Footer, Header, Hide, MovieInfo, MoviesList } from "../../components";
-import { setGenres, setLoading, setMovies } from "../../redux";
-import { getGenres, getMovies, getMoviesBySearchValue } from "../../services";
+import {Footer, Header, Hide, MovieInfo, MoviesList} from "../../components";
+import {setMovies} from "../../redux";
 
 export const MoviesPage = () => {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
   const { search } = useLocation();
 
   const { genres, theme } = useSelector(({ genres: { genres }, theme: { theme } }) => ({ genres, theme }));
 
   useEffect(() => {
-    (async function() {
-      try {
-        dispatch(setLoading(true));
-
-        const parsed = queryString.parse(search);
-        let movies;
-
-        parsed.query
-            ? movies = await getMoviesBySearchValue(search) || {}
-            : movies = await getMovies(parsed);
-
-        dispatch(setMovies(movies));
-
-        if (!genres) {
-          const genres = await getGenres();
-          dispatch(setGenres(genres));
-        }
-      } catch (e) {
-        console.error(e);
-      } finally {
-        dispatch(setLoading(false));
-      }
-    })();
-  }, [dispatch, genres, search]);
+      dispatch(setMovies(search, genres));
+  }, [genres, search]);
 
   return (
       <>
