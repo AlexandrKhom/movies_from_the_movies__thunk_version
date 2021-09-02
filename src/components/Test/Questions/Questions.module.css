@@ -1,0 +1,82 @@
+.wrapper {
+    margin: auto;
+    width: 85%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+}
+
+.wrapper > h1 {
+    text-align: center;
+    text-shadow: 5px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    border-bottom: 0;
+    border-right: 0;
+    background-color: #373752;
+}
+
+.referbtn {
+    border: black 1px solid;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: rgb(243, 238, 225);
+}
+.referbtn:hover {
+    cursor: pointer;
+    background-color: rgba(183, 253, 183, 0.65);
+}
+
+.linkToGitHub {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.m40 {
+    margin-top: 40px;
+}
+
+.green {
+    background-color: rgb(228, 252, 228);
+}
+
+.red {
+    background-color: rgba(183, 198, 245, 0.91);
+}
+
+.qsize {
+    font-size: 20px;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.qsize2 {
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.notForCopy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .MuiOutlinedInput-root {
+        width: 90%;
+    }
+    .MuiButton-outlinedPrimary {
+        width: 90%;
+    }
+    hr {
+        width: 90%;
+    }
+}

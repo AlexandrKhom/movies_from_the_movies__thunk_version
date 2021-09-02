@@ -1,0 +1,16 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #6a6a6a;
+    font-size: 18px;
+}
+.cv_wrapper {
+    margin: auto;
+    width: 1000px;
+    min-height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.wrapper > h1 {
+    text-align: center;
+}

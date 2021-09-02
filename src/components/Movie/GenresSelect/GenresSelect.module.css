@@ -1,0 +1,25 @@
+.input {
+    width: 180px;
+    font-size: 17px;
+    padding: 5px 10px;
+    flex-grow: 10;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.input:active {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.input:hover {
+    border: 2px solid #1a549a;
+}
+
+.white {
+    background-color: #ccced7;
+}
+.dark {
+    background-color: #373752;
+    color: #81c1f3;
+}

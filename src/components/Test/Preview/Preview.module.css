@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #a8c6ff;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.block > h2 {
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+.block > button {
+    border-radius: 15px;
+}

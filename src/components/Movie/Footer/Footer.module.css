@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    width: 100%;
+    min-width: 620px;
+    height: 6vh;
+    justify-content: center;
+    font-size: 35px;
+    justify-items: center;
+    align-items: center;
+}
+.test {
+    text-decoration: none;
+    font-size: 25px;
+}
+.test:hover {
+    cursor: pointer;
+    font-size: 77%;
+}
+.white {
+    background-color: #7f8ace;
+}
+.dark {
+    background-color: #050521;
+    color: #81c1f3;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        min-width: 100%;
+    }
+}

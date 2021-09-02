@@ -1,0 +1,31 @@
+.wrapper {
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom-left-radius: 110px;
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.green {
+    background-color: rgba(136, 229, 133, 0.6);
+}
+
+.red {
+    background-color: cornflowerblue;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 150px;
+        font-size: 30px;
+    }
+}

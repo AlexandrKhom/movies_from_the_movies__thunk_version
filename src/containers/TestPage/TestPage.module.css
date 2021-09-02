@@ -1,0 +1,29 @@
+.wrapper {
+    min-height: 100vh;
+}
+
+.green {
+    background-color: rgba(108, 248, 108, 0.71);
+}
+
+.red {
+    background-color: #3f51b5;
+}
+
+.back {
+    position: fixed;
+    left: 2px;
+    top: 2px;
+    text-decoration: none;
+    color: rgba(24, 38, 114, 0.63);
+    font-size: large;
+    border: rgba(24, 38, 114, 0.63) 1px solid;
+    border-radius: 22px;
+    margin: 3px;
+    padding: 1px;
+}
+
+.back:hover {
+    border: rgb(6, 15, 26) 1px solid;
+    color: rgb(6, 15, 26);
+}
