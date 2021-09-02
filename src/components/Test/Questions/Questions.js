@@ -224,10 +224,10 @@ export const Questions = ({setSuccess, success}) => {
                     <hr/>
                     <br/>
                     <div className={styles.qsize}>6️⃣ Чему равно 2 && 1 && 0 && null && undefined && 5 ?</div>
-                    {/*<br/>*/}
+                    <br/>
                     <TextField onChange={handleChange} value={formState.input2} name="input2" label="Outlined"
                                variant="outlined"/>
-                    {/*<br/>*/}
+                    <br/>
 
                     {valid && !success &&
                     <Button onClick={() => setSuccess(true)} variant="outlined" color="primary">Submit</Button>}

@@ -26,6 +26,7 @@ export const Hide = () => {
         <div className={styles.wrapper}>
           <div className={styles.first}>
             <h2 className={styles.second}>Last update (v2.0)</h2>
+            <h3 className={styles.second}>React (Redux, thunk)</h3>
             <br/>
             <h3>Added features:</h3>
             <ul>
