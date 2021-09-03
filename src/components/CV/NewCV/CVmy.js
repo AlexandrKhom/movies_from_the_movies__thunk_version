@@ -8,6 +8,7 @@ import {
     slideInLeft, slideInRight, slideInUp
 } from 'react-animations';
 import {Link} from "react-router-dom";
+import {ScrollToTopOnMount} from "../ScrollToTopOnMount/ScrollToTopOnMount";
 
 
 export const SlideInLeft = styled.div`animation: 2s ${keyframes`${slideInLeft}`}`;
@@ -28,6 +29,7 @@ export function CVmy() {
 
     return (
         <div className={styles.wrapper}>
+            <ScrollToTopOnMount/>
             <SlideInLeft className={styles.bottom}>
                 <Link to="/" className={styles.back}>H</Link>
                 <div onMouseEnter={() => {play()}} onMouseLeave={() => {stop()}}>

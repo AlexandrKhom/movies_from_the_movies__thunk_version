@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import styles from "./MovieInfo.module.css";
 import { getMovieDetailsById } from "../../../services";
 import { Loading } from "../Loading";
+import {ScrollToTopOnMount} from "../../CV/ScrollToTopOnMount/ScrollToTopOnMount";
 
 export const MovieInfo = () => {
   const { id } = useParams();
@@ -76,6 +77,7 @@ export const MovieInfo = () => {
                   allowFullScreen="allowfullscreen"
                   src={'https://www.youtube.com/embed/' + filmDetails.videos?.results[0]?.key}/>
         </div>
+        <ScrollToTopOnMount/>
       </div>
   )
 }
