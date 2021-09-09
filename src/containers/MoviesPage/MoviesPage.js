@@ -8,25 +8,25 @@ import {setMovies} from "../../redux";
 
 export const MoviesPage = () => {
     const dispatch = useDispatch();
-  const { search } = useLocation();
+    const {search} = useLocation();
 
-  const { genres, theme } = useSelector(({ genres: { genres }, theme: { theme } }) => ({ genres, theme }));
+    const {genres, theme} = useSelector(({genres: {genres}, theme: {theme}}) => ({genres, theme}));
 
-  useEffect(() => {
-      dispatch(setMovies(search, genres));
-  }, [genres, search]);
+    useEffect(() => {
+        dispatch(setMovies(search, genres));
+    }, [genres, search]);
 
-  return (
-      <>
-        <Hide/>
-        <Header/>
-      <div className={`${styles.movies_page} ${theme ? styles.dark : styles.white}`}>
-        <Switch>
-          <Route exact path="/movies/:id" component={MovieInfo}/>
-          <Route path="/movies" component={MoviesList}/>
-        </Switch>
-      </div>
-        <Footer/>
-      </>
-  );
+    return (
+        <>
+            <Hide/>
+            <Header/>
+            <div className={`${styles.movies_page} ${theme ? styles.dark : styles.white}`}>
+                <Switch>
+                    <Route exact path="/movies/:id" component={MovieInfo}/>
+                    <Route path="/movies" component={MoviesList}/>
+                </Switch>
+            </div>
+            <Footer/>
+        </>
+    );
 }

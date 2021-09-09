@@ -238,7 +238,8 @@ export const Questions = ({setSuccess, success}) => {
             </div>
             <div className={styles.linkToGitHub}>
                 {success &&
-                <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies__thunk_version">
+                <a target='_blank' rel="noreferrer"
+                   href="https://github.com/AlexandrKhom/movies_from_the_movies__thunk_version">
                     <button className={styles.referbtn}>
                         <b>Show source code
                             {/*my project*/}

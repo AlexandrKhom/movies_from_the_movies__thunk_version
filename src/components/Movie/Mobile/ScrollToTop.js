@@ -6,9 +6,11 @@ const StyledTop = styled.div`
   top: 85vh;
   left: 0.5vw;
   z-index: 25;
+
   div {
     font-size: 3vh;
   }
+
   :hover {
     cursor: pointer;
   }
@@ -45,7 +47,7 @@ export function ScrollToTop() {
             {isVisible &&
             <div onClick={scrollToTop}>
                 🔝
-                 </div>}
+            </div>}
         </StyledTop>
     );
 }
